@@ -1,0 +1,58 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ddd;
+}
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 2rem 5vw;
+}
+
+.card {
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 1rem;
+    aspect-ratio: 1 / 1;
+}
+
+.backgroundInputContainer {
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.backgroundInput {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.recommendedCards {
+    display: grid;
+    max-width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+}
+
+.cardColorText {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
