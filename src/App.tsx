@@ -75,6 +75,7 @@ function App() {
                         type="text"
                         value={backgroundColor}
                         onChange={e => setBackgroundColor(e.target.value)}
+                        size={6}
                         maxLength={6}
                     />
                 </label>

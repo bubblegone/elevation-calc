@@ -4,13 +4,15 @@
     flex-direction: column;
     justify-content: center;
     color: #ddd;
+    padding-inline: max(5vw, 1rem);
 }
 
 .centerContainer {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    margin: 2rem 5vw;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: clamp(300px, 85vw, 800px);
 }
 
 .card {
@@ -20,6 +22,7 @@
     justify-content: center;
     padding-inline: 1rem;
     aspect-ratio: 1 / 1;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.05);
 }
 
 .backgroundInputContainer {
@@ -36,19 +39,20 @@
 }
 
 .backgroundInput {
+    margin-inline: auto;
     outline: none;
     border: none;
     background-color: #fff;
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     font-size: 1rem;
 }
 
 .recommendedCards {
     display: grid;
     max-width: 100%;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
 }
 
 .cardColorText {
